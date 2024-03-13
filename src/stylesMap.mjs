@@ -8,6 +8,7 @@ export default {
 	"magenta"   : [ 5, 35],
 	"cyan"      : [ 6, 36],
 	"white"     : [ 7, 37],
+	"gray"      : [ 8, 90],
 
 	"bgBlack"   : [10, 40],
 	"bgRed"     : [11, 41],

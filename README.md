@@ -7,6 +7,7 @@ import {c, print} from "@anio-js-foundation/str-colorize"
 
 print(c.green("This is a green text\n"))
 print(c.red("This is a green text\n"))
+print(c.gray("This is gray text\n"))
 
 print(
 	c.green(
