@@ -1,0 +1,23 @@
+{
+  "name": "@anio-js-foundation/str-colorize",
+  "version": "1.0.0",
+  "description": "Colorize a string.",
+  "main": "./dist/package.mjs",
+  "author": "Anio Software <info@anio.software>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anio-js-foundation/str-colorize.git"
+  },
+  "devDependencies": {
+    "@anio-js-foundation/create-modifier-function": "^1.0.0",
+    "@anio-js-foundation/is-node": "^2.0.0",
+    "@anio-software/npm-package-bundler": "^1.0.0"
+  },
+  "scripts": {
+    "prepare": "./node_modules/.bin/npm-package-bundler ."
+  },
+  "files": [
+    "./dist/package.mjs"
+  ]
+}
