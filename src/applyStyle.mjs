@@ -6,12 +6,12 @@ function applyStylesToString(styles, str) {
 	for (const style of styles) {
 		const [code] = stylesMap[style]
 
-		ret += `\u000b`
+		ret += `\u0001`
 		ret += String.fromCharCode(code)
 	}
 
 	ret += str
-	ret += `\u001b`.repeat(styles.length)
+	ret += `\u0002`.repeat(styles.length)
 
 	return ret
 }

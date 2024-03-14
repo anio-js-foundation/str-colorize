@@ -21,7 +21,7 @@ export default function parse(input) {
 		const ch = buffer.pop(1)
 
 		// read style
-		if (ch === `\u000b`) {
+		if (ch === `\u0001`) {
 			let style_code = buffer.pop(1)
 
 			if (!style_code.length) break
@@ -29,7 +29,7 @@ export default function parse(input) {
 			ret.push(["push", styleCodeToName(style_code)])
 		}
 		// pop stack
-		else if (ch === `\u001b`) {
+		else if (ch === `\u0002`) {
 			ret.push(["pop"])
 		}
 		else {
