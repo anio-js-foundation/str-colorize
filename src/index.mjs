@@ -13,7 +13,7 @@ const colorize = function(str) { return str; }
 const styles = Object.keys(stylesMap)
 
 for (const style in stylesMap) {
-	colorize[style] = createModifierFunction(`${style}`, (modifiers, ...args) => {
+	colorize[style] = createModifierFunction((modifiers, ...args) => {
 		return applyStyle([
 			...modifiers,
 			style

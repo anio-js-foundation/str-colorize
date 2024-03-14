@@ -10,7 +10,7 @@
     "url": "git+https://github.com/anio-js-foundation/str-colorize.git"
   },
   "devDependencies": {
-    "@anio-js-foundation/create-modifier-function": "^1.0.0",
+    "@anio-js-foundation/create-modifier-function": "^2.0.0",
     "@anio-js-foundation/is-node": "^2.0.0",
     "@anio-software/npm-package-bundler": "^1.0.0"
   },
