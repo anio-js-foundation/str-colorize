@@ -75,3 +75,7 @@ print.stderr = (...args) => {
 
 	print_impl(args, (str) => process.stderr.write(str), use_colors)
 }
+
+export {
+	default as stripStyles
+} from "./stripStyles.mjs"
