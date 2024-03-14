@@ -25,6 +25,12 @@ export const c      = colorize
 export const render = render_impl
 export const parse  = parse_impl
 
+let force_colors = false
+
+export function forceColors() {
+	force_colors = true
+}
+
 let node_modules = {}
 
 if (isNode()) {
@@ -41,7 +47,7 @@ export const print = (...args) => {
 
 	const {tty, process} = node_modules
 
-	let use_colors = false
+	let use_colors = force_colors
 
 	if (tty.isatty(process.stdout.fd)) {
 		use_colors = true
@@ -63,7 +69,7 @@ print.stderr = (...args) => {
 
 	const {tty, process} = node_modules
 
-	let use_colors = false
+	let use_colors = force_colors
 
 	if (tty.isatty(process.stderr.fd)) {
 		use_colors = true
